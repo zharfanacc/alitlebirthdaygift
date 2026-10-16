@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sebuah cerita ulang tahun kecil yang dibuat khusus untuk Lilis."
+    />
+    <meta name="theme-color" content="#f6e2e9" />
+    <title>A Little Birthday Story for Lilis</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="foto%20avatar/WhatsApp%20Image%202026-10-16%20at%2018.42.26.jpeg"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#cerita">Lewati ke cerita utama</a>
+
+    <div class="paper-grain" aria-hidden="true"></div>
+    <div class="journey-progress" aria-hidden="true">
+      <span class="journey-progress__fill"></span>
+    </div>
+
+    <audio
+      id="birthday-song"
+      preload="metadata"
+      loop
+      src="Written%20in%20Your%20Heart%20(from%20%27Barbie%20as%20the%20Princess%20and%20the%20Pauper%27).mp3"
+    ></audio>
+
+    <button class="music-toggle" type="button" aria-label="Putar musik" aria-pressed="false">
+      <span class="music-toggle__bars" aria-hidden="true">
+        <i></i><i></i><i></i><i></i>
+      </span>
+      <span class="music-toggle__label">play song</span>
+    </button>
+
+    <main>
+      <section class="hero" id="awal" aria-labelledby="hero-title">
+        <svg class="hero__botanical hero__botanical--left" viewBox="0 0 180 420" aria-hidden="true">
+          <path d="M153 409C82 307 107 187 42 61" />
+          <path d="M100 254C43 250 24 223 20 188C62 190 91 214 100 254Z" />
+          <path d="M119 326C71 330 49 311 40 279C78 274 108 292 119 326Z" />
+          <path d="M82 145C119 127 144 135 160 160C129 178 101 171 82 145Z" />
+          <circle cx="39" cy="58" r="13" />
+          <path d="M39 45V26M26 50L13 38M52 50L65 38M27 66L12 76M51 66L66 76" />
+        </svg>
+
+        <svg class="hero__botanical hero__botanical--right" viewBox="0 0 180 420" aria-hidden="true">
+          <path d="M153 409C82 307 107 187 42 61" />
+          <path d="M100 254C43 250 24 223 20 188C62 190 91 214 100 254Z" />
+          <path d="M119 326C71 330 49 311 40 279C78 274 108 292 119 326Z" />
+          <path d="M82 145C119 127 144 135 160 160C129 178 101 171 82 145Z" />
+          <circle cx="39" cy="58" r="13" />
+          <path d="M39 45V26M26 50L13 38M52 50L65 38M27 66L12 76M51 66L66 76" />
+        </svg>
+
+        <div class="hero__halo" aria-hidden="true">
+          <span>16</span>
+          <i>✦</i>
+          <span>10</span>
+        </div>
+
+        <div class="hero__content">
+          <p class="eyebrow hero__eyebrow">a little celebration · just for you</p>
+          <h1 id="hero-title">
+            Happy <em>Birthday</em>
+            <span>Lilis</span>
+          </h1>
+          <p class="hero__note">Hadiah tak seberapa dariku untuk kamu yang membanggakan.</p>
+          <button class="story-button" id="start-story" type="button">
+            <span>Udah siap?</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14M14 7l5 5-5 5" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="hero__scroll-cue" aria-hidden="true">
+          <span>scroll pelan-pelan</span>
+          <i></i>
+        </div>
+      </section>
+
+      <section class="book-story" id="cerita" aria-label="Buku ucapan ulang tahun">
+        <div class="book-scene">
+          <div class="scene-kicker" aria-hidden="true">
+            <span>chapter one</span>
+            <i></i>
+            <span>a note for lilis</span>
+          </div>
+
+          <div class="book-stage">
+            <div class="book-shadow" aria-hidden="true"></div>
+            <article class="book" aria-label="Buku ucapan untuk Lilis">
+              <div class="book__right-page">
+                <span class="page-number">02</span>
+                <div class="page-flower" aria-hidden="true">✿</div>
+                <div class="wish-copy">
+                  <p class="wish-copy__mini">dear birthday girl,</p>
+                  <h2>Untuk Lilis,</h2>
+                  <p class="wish-copy__intro">
+                    Di umur yang baru ini, ada banyak doa baik yang ingin aku titipkan untukmu.
+                  </p>
+
+                  <div class="wish-slides" aria-live="polite">
+                    <p class="wish-slide is-active" data-wish="0">
+                      Semoga tahun ini membawa lebih banyak alasan untuk tersenyum.
+                    </p>
+                    <p class="wish-slide" data-wish="1">
+                      Semoga semua yang kamu usahakan pelan-pelan menemukan jalannya.
+                    </p>
+                    <p class="wish-slide" data-wish="2">
+                      Dan semoga kamu selalu dikelilingi orang yang menyayangimu.
+                    </p>
+                  </div>
+
+                  <div class="wish-copy__footer">
+                    <div class="wish-dots" aria-hidden="true">
+                      <i class="is-active"></i><i></i><i></i>
+                    </div>
+                    <p>— dari aku, untukmu ♡</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="book__cover">
+                <div class="book__face book__face--front">
+                  <span class="cover-corner cover-corner--tl" aria-hidden="true"></span>
+                  <span class="cover-corner cover-corner--tr" aria-hidden="true"></span>
+                  <span class="cover-corner cover-corner--bl" aria-hidden="true"></span>
+                  <span class="cover-corner cover-corner--br" aria-hidden="true"></span>
+                  <div class="cover-frame">
+                    <div class="cover-daisy" aria-hidden="true">✿</div>
+                    <p>A Little Book for</p>
+                    <h2>Lilis</h2>
+                    <span>made with lots of love</span>
+                  </div>
+                  <div class="cover-spine" aria-hidden="true"></div>
+                </div>
+
+                <div class="book__face book__face--inside">
+                  <span class="page-number">01</span>
+                  <div class="avatar-frame">
+                    <span class="avatar-tape" aria-hidden="true"></span>
+                    <img
+                      src="foto%20avatar/WhatsApp%20Image%202026-10-16%20at%2018.42.26.jpeg"
+                      alt="Potret Lilis"
+                    />
+                    <div class="avatar-frame__caption">
+                      <span>the birthday girl</span>
+                      <i>♡</i>
+                    </div>
+                  </div>
+                  <p class="inside-note">Keep blooming in your own beautiful way.</p>
+                  <div class="inside-sparkle" aria-hidden="true">✦</div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="book-moment" aria-hidden="true">
+            <span class="book-moment__count">01 / 03</span>
+            <span class="book-moment__line"></span>
+            <span class="book-moment__label">sebuah doa kecil</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="gift-story" id="hadiah" aria-label="Hadiah utama untuk Lilis">
+        <div class="gift-scene">
+          <p class="eyebrow gift-scene__eyebrow">chapter two · a tiny surprise</p>
+          <h2>Tapi tunggu…<br /><em>ada hadiah kecil.</em></h2>
+
+          <div class="gift-wrap">
+            <span class="gift-spark gift-spark--one" aria-hidden="true">✦</span>
+            <span class="gift-spark gift-spark--two" aria-hidden="true">✦</span>
+            <span class="gift-spark gift-spark--three" aria-hidden="true">♡</span>
+
+            <div class="envelope" aria-hidden="true">
+              <div class="envelope__back"></div>
+              <div class="envelope__front"></div>
+            </div>
+
+            <figure class="gift-card">
+              <div class="gift-card__header">
+                <span>special delivery</span>
+                <i>for lilis ♡</i>
+              </div>
+              <img
+                src="main%20foto/WhatsApp%20Image%202026-10-16%20at%2018.39.21.jpeg"
+                alt="Voucher token listrik PLN sebagai hadiah ulang tahun untuk Lilis"
+              />
+              <figcaption>Semoga hadiahnya berguna, ya. Jangan lupa disimpan ♡</figcaption>
+            </figure>
+          </div>
+
+          <p class="gift-scene__hint">lanjut scroll untuk membuka album kenangan</p>
+        </div>
+      </section>
+
+      <section class="memories" id="kenangan" aria-labelledby="memories-title">
+        <header class="memories__header reveal-on-view">
+          <p class="eyebrow">the last chapter · our little archive</p>
+          <h2 id="memories-title">Beberapa halaman<br /><em>yang layak disimpan.</em></h2>
+          <p>Karena hari-hari biasa terasa lebih seru saat dijalani bersama.</p>
+        </header>
+
+        <div class="memory-grid">
+          <figure class="memory-card memory-card--1 reveal-on-view">
+            <img
+              loading="lazy"
+              src="foto%20kolase/WhatsApp%20Image%202026-10-16%20at%2018.38.51.jpeg"
+              alt="Kenangan bersama teman-teman di kelas"
+            />
+            <figcaption>the class chronicles</figcaption>
+          </figure>
+
+          <figure class="memory-card memory-card--2 reveal-on-view">
+            <img
+              loading="lazy"
+              src="foto%20kolase/WhatsApp%20Image%202026-10-16%20at%2018.38.51%20(1).jpeg"
+              alt="Swafoto bersama teman-teman di luar ruangan"
+            />
+            <figcaption>sunny days, silly faces</figcaption>
+          </figure>
+
+          <figure class="memory-card memory-card--3 reveal-on-view">
+            <img
+              loading="lazy"
+              src="foto%20kolase/WhatsApp%20Image%202026-10-16%20at%2018.38.51%20(2).jpeg"
+              alt="Makan bersama teman"
+            />
+            <figcaption>good food, better company</figcaption>
+          </figure>
+
+          <figure class="memory-card memory-card--4 reveal-on-view">
+            <img
+              loading="lazy"
+              src="foto%20kolase/WhatsApp%20Image%202026-10-16%20at%2018.38.51%20(3).jpeg"
+              alt="Kebersamaan di perpustakaan"
+            />
+            <figcaption>tiny study break</figcaption>
+          </figure>
+
+          <figure class="memory-card memory-card--5 reveal-on-view">
+            <img
+              loading="lazy"
+              src="foto%20kolase/WhatsApp%20Image%202026-10-16%20at%2018.38.51%20(4).jpeg"
+              alt="Foto bersama mengenakan busana bernuansa netral"
+            />
+            <figcaption>soft colors, warm memories</figcaption>
+          </figure>
+
+          <figure class="memory-card memory-card--6 reveal-on-view">
+            <img
+              loading="lazy"
+              src="foto%20kolase/WhatsApp%20Image%202026-10-16%20at%2018.39.12.jpeg"
+              alt="Kenangan perjalanan dengan sepeda motor"
+            />
+            <figcaption>on our way somewhere</figcaption>
+          </figure>
+
+          <figure class="memory-card memory-card--7 reveal-on-view">
+            <img
+              loading="lazy"
+              src="foto%20kolase/WhatsApp%20Image%202026-10-16%20at%2018.40.18.jpeg"
+              alt="Kenangan saat sebuah acara"
+            />
+            <figcaption>the moments in between</figcaption>
+          </figure>
+        </div>
+
+        <footer class="final-note reveal-on-view">
+          <span class="final-note__flower" aria-hidden="true">✿</span>
+          <p>Semoga halaman-halaman berikutnya jauh lebih indah.</p>
+          <h2>Happy birthday, Lilis.</h2>
+          <span class="final-note__signature">with love, always ♡</span>
+          <button id="replay-story" class="replay-button" type="button">
+            Putar dari awal <span aria-hidden="true">↟</span>
+          </button>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
